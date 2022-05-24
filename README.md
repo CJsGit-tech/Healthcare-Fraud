@@ -10,9 +10,13 @@ Please understand that the analysis is designed to run on the full size of the d
 <h3>Outpatient Dataset Overview</h3>
 <img src='source/screenshots/outpatient_FraudLabelDistribution-001.png'>
 <br>
+<br>
+
+
 <h3>Knowledge Grapgh: Frequent Subgroups of Physicians who engaged in fraudulent records (Inpatient) </h3>
 <img src='source/screenshots/KG-screenshot02.png' width=300 height=300 >
 
 <h3>Knowledge Grapgh: Frequent Subgroups of Physicians who engaged in fraudulent records (Outpatient)</h3>
 <img src='source/screenshots/KG-screenshot01.png' width=300 height=300 >
 
+#### Please Download the HTMLS to view the knowledge graphs in interactive mode
