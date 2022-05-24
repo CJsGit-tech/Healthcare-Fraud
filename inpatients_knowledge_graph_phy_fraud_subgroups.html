@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 800px;
+            height: 800px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "red", "id": "PHY345295", "label": "PHY345295", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY365755", "label": "PHY365755", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY350524", "label": "PHY350524", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY423877", "label": "PHY423877", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY377670", "label": "PHY377670", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY400274", "label": "PHY400274", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY315112", "label": "PHY315112", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY395464", "label": "PHY395464", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY429430", "label": "PHY429430", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY422134", "label": "PHY422134", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY340233", "label": "PHY340233", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY396496", "label": "PHY396496", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY431177", "label": "PHY431177", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY352941", "label": "PHY352941", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY340012", "label": "PHY340012", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY433950", "label": "PHY433950", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY364317", "label": "PHY364317", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY407199", "label": "PHY407199", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY320745", "label": "PHY320745", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY329774", "label": "PHY329774", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY354983", "label": "PHY354983", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY348953", "label": "PHY348953", "shape": "dot", "size": 10}, {"color": "red", "id": "PHY327234", "label": "PHY327234", "shape": "dot", "size": 10}]);
+        edges = new vis.DataSet([{"from": "PHY345295", "to": "PHY365755", "weight": 3.0}, {"from": "PHY350524", "to": "PHY423877", "weight": 2.9}, {"from": "PHY377670", "to": "PHY400274", "weight": 4.95}, {"from": "PHY315112", "to": "PHY395464", "weight": 3.65}, {"from": "PHY429430", "to": "PHY422134", "weight": 11.25}, {"from": "PHY340233", "to": "PHY396496", "weight": 4.25}, {"from": "PHY431177", "to": "PHY352941", "weight": 5.5}, {"from": "PHY340012", "to": "PHY433950", "weight": 3.2}, {"from": "PHY364317", "to": "PHY407199", "weight": 3.4}, {"from": "PHY320745", "to": "PHY423877", "weight": 2.75}, {"from": "PHY329774", "to": "PHY354983", "weight": 4.95}, {"from": "PHY348953", "to": "PHY327234", "weight": 2.5}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
