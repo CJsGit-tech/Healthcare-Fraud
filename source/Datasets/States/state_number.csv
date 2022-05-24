@@ -1,0 +1,53 @@
+State,state_name,state_code,state_id_ansi
+1,Alabama,AL,1
+2,Alaska,AK,2
+3,Arizona,AZ,4
+4,Arkansas,AR,5
+5,California,CA,6
+6,Colorado,CO,8
+7,Connecticut,CT,9
+8,Delaware,DE,10
+9,District of Columbia,DC,11
+10,Florida,FL,12
+11,Georgia,GA,13
+12,Hawaii,HI,15
+13,Idaho,ID,16
+14,Illinois,IL,17
+15,Indiana,IN,18
+16,Iowa,IA,19
+17,Kansas,KS,20
+18,Kentucky,KY,21
+19,Louisiana,LA,22
+20,Maine,ME,23
+21,Maryland,MD,24
+22,Massachusetts,MA,25
+23,Michigan,MI,26
+24,Minnesota,MN,27
+25,Mississippi,MS,28
+26,Missouri,MO,29
+27,Montana,MT,30
+28,Nebraska,NE,31
+29,Nevada,NV,32
+30,New Hampshire,NH,33
+31,New Jersey,NJ,34
+32,New Mexico,NM,35
+33,New York,NY,36
+34,North Carolina,NC,37
+35,North Dakota,ND,38
+36,Ohio,OH,39
+37,Oklahoma,OK,40
+38,Oregon,OR,41
+39,Pennsylvania,PA,42
+41,Rhode Island,RI,44
+42,South Carolina,SC,45
+43,South Dakota,SD,46
+44,Tennessee,TN,47
+45,Texas,TX,48
+46,Utah,UT,49
+47,Vermont,VT,50
+49,Virginia,VA,51
+50,Washington,WA,53
+51,West Virginia,WV,54
+52,Wisconsin,WI,55
+53,Wyoming,WY,56
+54,Puerto Rico,PR,72
